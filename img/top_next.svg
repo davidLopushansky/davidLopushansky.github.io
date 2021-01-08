@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="54" viewBox="0 0 63 54">
+  <g id="Сгруппировать_9" data-name="Сгруппировать 9" transform="translate(-1859 -1769)">
+    <g id="Прямоугольник_27" data-name="Прямоугольник 27" transform="translate(1859 1769)" fill="none" stroke="#fff" stroke-width="1">
+      <path d="M23,0H63a0,0,0,0,1,0,0V54a0,0,0,0,1,0,0H23A23,23,0,0,1,0,31V23A23,23,0,0,1,23,0Z" stroke="none"/>
+      <path d="M23,.5H62a.5.5,0,0,1,.5.5V53a.5.5,0,0,1-.5.5H23A22.5,22.5,0,0,1,.5,31V23A22.5,22.5,0,0,1,23,.5Z" fill="none"/>
+    </g>
+    <path id="Многоугольник_1" data-name="Многоугольник 1" d="M13.5,0,27,23H0Z" transform="translate(1905 1783) rotate(90)" fill="#fff"/>
+  </g>
+</svg>
