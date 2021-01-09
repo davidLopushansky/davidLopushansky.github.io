@@ -37,8 +37,17 @@ a:hover {
   text-decoration: none;
 }
 
+a:focus {
+  outline: none;
+}
+
 button {
   outline: none!important;
+}
+
+button:focus {
+  outline: none!important;
+  box-shadow: none!important;
 }
 
 /* Alithings */
@@ -172,6 +181,7 @@ html {
   height: 45px;
   width: 122px;
   padding: 0 44px;
+  cursor: pointer;
 }
 
 .top_title {
@@ -190,8 +200,10 @@ html {
   font-weight: 400;
   border: 1px solid #fff;
   border-radius: 23px;
-  color: #fff;
+  color: #fff!important;
   text-transform: uppercase; 
+  padding: 10px 25px;
+  cursor: pointer;
 }
 
 .top_suptext {
@@ -253,6 +265,7 @@ html {
 .welcome {
   margin-top: 80px;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .welcome_title {
@@ -390,6 +403,8 @@ html {
   height: 46px;
   padding: 0 10px;
   transition: .10s;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .product_basket span {
@@ -521,8 +536,10 @@ html {
   font-weight: 400;
   border: 1px solid #fff;
   border-radius: 23px;
-  color: #fff;
+  color: #fff!important;
   text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 0;
 }
 
 .zara_item {
@@ -560,8 +577,7 @@ html {
   border-radius: 23px 0 0 23px;
   height: 46px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
   margin-top: 22px;
   padding-right: 45px;
   padding-left: 20px;
@@ -609,6 +625,10 @@ html {
 
 .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
   content: none;
+}
+
+.swiper-button-next:focus,  .swiper-button-prev:focus{
+  outline: none;
 }
 
 /* About */
@@ -674,8 +694,10 @@ html {
   font-weight: 700;
   border: 1px solid #855394;
   border-radius: 23px;
-  color: #855394;
+  color: #855394!important;
   text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 0;
 }
 
 /* Working */
@@ -804,7 +826,7 @@ html {
 }
 
 .btn-footer {
-  color: #fff;
+  color: #fff!important;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -814,6 +836,8 @@ html {
   height: 30px;
   width: 90px;
   padding: 0px 25px;
+  cursor: pointer;
+  background-color: inherit;
 }
 
 .footer_title {
