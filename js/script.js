@@ -15,10 +15,12 @@ $(document).ready(function () {
     	$(".header_menu_down_left > ul > li > a").removeClass("active");
     	$(this).toggleClass("active");
 	});
-	$(".header_menu > li > a").on("click", function (){
-    	$(".header_menu_down_left").hide();
-    	$(this).next().toggle();
-    	$(".header_menu > li > a").removeClass("active");
+	$(".header_menu > li").on("click", function (){
+		$(".header_menu > li").removeClass("active");
+    	$(this).toggleClass("active");
+	});
+	$(".header_menu_down_right_scroll div > ul > li").on("click", function (){
+		$(".header_menu_down_right_scroll div > ul > li").removeClass("active");
     	$(this).toggleClass("active");
 	});
 });

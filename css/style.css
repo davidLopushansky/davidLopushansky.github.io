@@ -99,7 +99,7 @@ html {
 }
 
 .header_logo {
-
+  display: block;
 }
 
 .header_menu {
@@ -112,6 +112,7 @@ html {
 
 .header_menu > li {
   margin-left: 62px;
+  border-bottom: 6px solid rgba(255, 255, 255, .0);
 }
 
 .header_menu > li:first-child {
@@ -122,11 +123,7 @@ html {
   border-bottom: 6px solid #fff;
 }
 
-.header_menu > li > a:hover {
-  padding-bottom: 6px;
-}
-
-.header_menu .active {
+.header_menu > li.active {
   border-bottom: 6px solid #fff;
 }
 
@@ -135,7 +132,7 @@ html {
 .header_menu_down_left {
   position: absolute;
   left: 15px;
-  top: 52px;
+  top: 42px;
   background: #fff;
   width: 260px;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
@@ -160,6 +157,14 @@ html {
 .header_menu_down_left_ul {
   overflow: auto;
   height: 510px;
+}
+
+.header_menu_down_left_ul > li > a:hover {
+  background-color: #855394;
+  border-radius: 23px 0 0 23px;
+  color: #fff;
+  background-image: url(../img/arrow_white.svg);
+}
 }
 
 .header_menu_down_left_ul::-webkit-scrollbar-track {
@@ -235,9 +240,9 @@ border: 0px;
   position: absolute;
   top: 0;
   padding-left: 16px;
-  left: 230px;
+  left: 259px;
   background: #fff;
-  width: 1370px;
+  width: 1345px;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 5px 3px 6px 0px rgba(0, 0, 0, 0.16);
@@ -250,6 +255,12 @@ border: 0px;
   height: 502px;
   overflow: auto;
   padding-right: 80px;
+}
+
+.header_menu_down_right_scroll div > ul > li:hover {
+  background: #DFCFE3;
+  border-radius: 30px;
+  color: #855394;
 }
 
 .header_menu_down_right_scroll::-webkit-scrollbar-track {
@@ -280,8 +291,8 @@ border: 0px;
 .header_menu_down_right_scroll::-webkit-scrollbar-button {
 background-image:url('');
 background-repeat:no-repeat;
-width:5px;
-height:0px
+width: 5px;
+height: 0px
 }
 
 .header_menu_down_right_scroll::-webkit-scrollbar-track {
@@ -301,8 +312,8 @@ background-color:#855394;
 .header_menu_down_right_scroll::-webkit-resizer{
 background-image:url('');
 background-repeat:no-repeat;
-width:10px;
-height:0px
+width: 10px;
+height: 0px
 }
 
 .header_menu_down_right_scroll::-webkit-scrollbar{
@@ -333,15 +344,14 @@ margin-top: 50px;
   text-transform: none;
 }
 
-.header_menu_down_right_scroll a {
-  padding: 6px 16px;
+.header_menu_down_right_scroll li {
+  padding: 2px 16px;
   display: block;
 }
 
 .header_menu_down_right_scroll .active {
   background: #DFCFE3;
   border-radius: 30px;
-  padding: 2px 16px;
   color: #855394;
 }
 
