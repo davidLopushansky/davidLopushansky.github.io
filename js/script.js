@@ -1,6 +1,24 @@
 var swiper = new Swiper('.swiper-container', {
-				      navigation: {
-				        nextEl: '.swiper-button-next',
-				        prevEl: '.swiper-button-prev',
-				      },
-				    });
+	navigation: {
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev',
+	},
+});
+
+$(document).ready(function () {
+	$(".header_menu > li > a").on("click", function (){
+    	$(this).next().toggle();
+	});
+	$(".header_menu_down_left > ul > li > a").on("click", function (){
+    	$(".header_menu_down_right").hide();
+    	$(this).next().toggle();
+    	$(".header_menu_down_left > ul > li > a").removeClass("active");
+    	$(this).toggleClass("active");
+	});
+	$(".header_menu > li > a").on("click", function (){
+    	$(".header_menu_down_left").hide();
+    	$(this).next().toggle();
+    	$(".header_menu > li > a").removeClass("active");
+    	$(this).toggleClass("active");
+	});
+});
